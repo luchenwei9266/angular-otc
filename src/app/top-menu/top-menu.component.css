@@ -1,0 +1,28 @@
+.head {
+    position: relative;
+    line-height: 64px;
+}
+
+.head-login {
+    position: absolute !important;
+    right: 20px;
+    width: 100px;
+}
+
+.head-login li {
+    display: inline-block;
+}
+
+:host ::ng-deep .logo {
+    width: 154px;
+    height: 28px;
+    border-radius: 6px;
+    margin: 16px 28px 16px 0;
+    float: left;
+    color: #fff;
+    position: relative;
+    z-index: 222222;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: bold;
+}

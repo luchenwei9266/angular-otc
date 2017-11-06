@@ -1,73 +1,53 @@
-<nz-layout class="layout">
-    <nz-header>
-        <div class="logo">Cryptocurrency-OTC</div>
-        <ul nz-menu [nzMode]="'horizontal'" [nzTheme]="'dark'" class='head'>
-            <li nz-menu-item>购买比特币</li>
-            <li nz-menu-item>出售比特币</li>
-            <li nz-menu-item>用户指南</li>
-            <li nz-menu-item>关于我们</li>
-            <div class="head-login">
-                <li nz-menu-item>登录</li>
-                <li na-menu-item>注册</li>
+<div class="lp-section-1">
+    <div class="lp-first-image">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <h2>这可能是你用过的最好用的OTC平台</h2>
+                    <p>只需输入想要购买的金额，即可开始体验方便快速的场外交易</p>
+                </div>
             </div>
-        </ul>
-    </nz-header>
-
-    <nz-content>
-        <div class="lp-section-1">
-            <div class="lp-first-image">
-                <div class="container">
-                    <div class="row">
-                        <div class="text-center">
-                            <h2>这可能是你用过的最好用的OTC平台</h2>
-                            <p>只需输入想要购买的金额，即可开始体验方便快速的场外交易</p>
+            <div class="exchange-input">
+                <form action="/sell_offers" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+                    <div class="currency-select">
+                        <div class="select-btc">
+                            <span class="select-text">购买</span>
+                            <nz-select name="cryptocurrency" [(ngModel)]="cryptocurrencySelectOption" nzAllowClear>
+                                <nz-option *ngFor="let option of cryptocurrencyList" [nzLabel]="option.label" [nzValue]="option">
+                                </nz-option>
+                            </nz-select>
+                        </div>
+                        <div class="select-cny">
+                            <span class="select-text">使用</span>
+                            <nz-select name="fiat_currency" [(ngModel)]="fiatSelectOption" nzAllowClear>
+                                <nz-option *ngFor="let option of fiatSelectList" [nzLabel]="option.label" [nzValue]="option"></nz-option>
+                            </nz-select>
                         </div>
                     </div>
-                    <div class="exchange-input">
-                        <form action="/sell_offers" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
-                            <div class="currency-select">
-                                <div class="select-btc">
-                                    <span class="select-text">购买</span>
-                                    <nz-select name="cryptocurrency" [(ngModel)]="cryptocurrencySelectOption" nzAllowClear>
-                                        <nz-option *ngFor="let option of cryptocurrencyList" [nzLabel]="option.label" [nzValue]="option">
-                                        </nz-option>
-                                    </nz-select>
-                                </div>
-                                <div class="select-cny">
-                                    <span class="select-text">使用</span>
-                                    <nz-select name="fiat_currency" [(ngModel)]="fiatSelectOption" nzAllowClear>
-                                        <nz-option *ngFor="let option of fiatSelectList" [nzLabel]="option.label" [nzValue]="option"></nz-option>
-                                    </nz-select>
-                                </div>
-                            </div>
-                            <div class="currency-input">
-                                <nz-input type="number" name="amount" [nzPlaceHolder]="'输入欲购买的法币金额'"></nz-input>
-                            </div>
-                            <div class="search-button">
-                                <button nz-button type="submit" name="commit" [nzType]="'primary'" class="btn-theme">搜索兑换</button>
-                            </div>
-                        </form>
+                    <div class="currency-input">
+                        <nz-input type="number" name="amount" [nzPlaceHolder]="'输入欲购买的法币金额'"></nz-input>
                     </div>
-                </div>
+                    <div class="search-button">
+                        <button nz-button type="submit" name="commit" [nzType]="'primary'" class="btn-theme">搜索兑换</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
+</div>
 
 
-        <div class="lp-section-2" nz-row>
-            <div class="container ">
-                <div class="row">
-                    <div class="text-center">
-                        <h2 class="section-title">因为专注，所以更加安全</h2>
-                        <hr class="line">
-                        <p>
-                            Cryptocurrency-OTC由年轻充满活力的区块链平台开发团队执行，结合交易所、ICO、金融外汇应用的开发经验，运用严格的KYC、公平的评分系统、安全的第三方资产锁定等运作措施，为区块链爱好者打造的安全易用快速交易的场外交易平台
-                        </p>
-                        <img src="/assets/world-map.png" alt="World map">
-                    </div>
-                </div>
+<div class="lp-section-2" nz-row>
+    <div class="container ">
+        <div class="row">
+            <div class="text-center">
+                <h2 class="section-title">因为专注，所以更加安全</h2>
+                <hr class="line">
+                <p>
+                    Cryptocurrency-OTC由年轻充满活力的区块链平台开发团队执行，结合交易所、ICO、金融外汇应用的开发经验，运用严格的KYC、公平的评分系统、安全的第三方资产锁定等运作措施，为区块链爱好者打造的安全易用快速交易的场外交易平台
+                </p>
+                <img src="/assets/world-map.png" alt="World map">
             </div>
         </div>
-    </nz-content>
-
-    <nz-footer style="text-align: center;">Cryptocurrency-OTC ©2017 Implement By Angular</nz-footer>
-</nz-layout>
+    </div>
+</div>
