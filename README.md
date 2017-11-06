@@ -26,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 #angular-otc
+
+# 请注意，本项目只用于个人学习，其素材和设计风格均来自网上，请勿将本项目作为正式商业应用。如涉及到到版权问题，您将自行负责后果。
+
+# Please note that this project is for personal study only. Its material and design style are all from the internet. Please do not use this          project as a formal commercial application. If it comes to copyright issues, you will be responsible for the consequences
