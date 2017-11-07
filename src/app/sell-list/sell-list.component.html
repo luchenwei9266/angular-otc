@@ -1,0 +1,43 @@
+<div class="sell-list-table">
+    <nz-table #nzTable [nzDataSource]="data" [nzPageSize]="10" nzShowTotal="ture">
+        <thead nz-thead>
+            <tr>
+                <th nz-th [nzExpand]="true"></th>
+                <th nz-th><span>名字</span></th>
+                <th nz-th><span>总交易额</span></th>
+                <th nz-th><span>交易范围</span></th>
+                <th nz-th [nzWidth]="'20%'"><span>综合评分</span></th>
+                <th nz-th><span>是否在线</span></th>
+                <th nz-th><span>确定交易</span></th>
+            </tr>
+        </thead>
+        <tbody nz-tbody>
+            <ng-template ngFor let-data [ngForOf]="nzTable.data">
+                <tr nz-tbody-tr>
+                    <td nz-td [nzExpand]="true">
+                        <nz-row-expand-icon [(nzExpand)]="data.expand"></nz-row-expand-icon>
+                    </td>
+                    <td nz-td>{{data.name}}</td>
+                    <td nz-td>{{data.amout}}</td>
+                    <td nz-td>{{data.range}}</td>
+                    <td nz-td>
+                        <nz-rate [(ngModel)]="data.score" nzAllowHalf [nzDisabled]="true"></nz-rate>
+                        <span *ngIf="data.score" class="ant-rate-text">{{data.score}} 星</span>
+                    </td>
+                    <td nz-td>{{data.online}}</td>
+                    <td nz-td>
+                        <span>
+                <a (click)="startExchange(data)">开始交易</a>
+              </span>
+                    </td>
+                </tr>
+                <tr nz-tbody-tr *ngIf="data.expand">
+                    <td nz-td></td>
+                    <td nz-td colspan="4">
+                        {{data.introduction}}
+                    </td>
+                </tr>
+            </ng-template>
+        </tbody>
+    </nz-table>
+</div>

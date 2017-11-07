@@ -8,27 +8,29 @@
                 </div>
             </div>
             <div class="exchange-input">
-                <form action="/sell_offers" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+                <form accept-charset="UTF-8">
                     <div class="currency-select">
                         <div class="select-btc">
                             <span class="select-text">购买</span>
-                            <nz-select name="cryptocurrency" [(ngModel)]="cryptocurrencySelectOption" nzAllowClear>
+                            <nz-select name="cryptocurrency" [(ngModel)]="cryptocurrencySelectOption" nzAllowClear [nzSize]="'large'">
                                 <nz-option *ngFor="let option of cryptocurrencyList" [nzLabel]="option.label" [nzValue]="option">
                                 </nz-option>
                             </nz-select>
                         </div>
                         <div class="select-cny">
                             <span class="select-text">使用</span>
-                            <nz-select name="fiat_currency" [(ngModel)]="fiatSelectOption" nzAllowClear>
+                            <nz-select name="fiat_currency" [(ngModel)]="fiatSelectOption" nzAllowClear [nzSize]="'large'">
                                 <nz-option *ngFor="let option of fiatSelectList" [nzLabel]="option.label" [nzValue]="option"></nz-option>
                             </nz-select>
                         </div>
                     </div>
                     <div class="currency-input">
-                        <nz-input type="number" name="amount" [nzPlaceHolder]="'输入欲购买的法币金额'"></nz-input>
+                        <nz-input type="number" name="amount" [nzPlaceHolder]="'输入欲购买的法币金额'" [nzSize]="'large'"></nz-input>
                     </div>
                     <div class="search-button">
-                        <button nz-button type="submit" name="commit" [nzType]="'primary'" class="btn-theme">搜索兑换</button>
+                        <a routerLink="/sellList" routerLinkActive="active">
+                            <button nz-button type="submit" name="commit" [nzType]="'primary'" class="btn-theme" [nzSize]="'large'">搜索兑换</button>
+                        </a>
                     </div>
                 </form>
             </div>
