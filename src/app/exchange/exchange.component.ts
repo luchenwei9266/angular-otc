@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HDNode, Transaction } from 'bitcoinjs-lib';
+import  { HDNode, Transaction,ECPair } from 'bitcoinjs-lib';
 
 @Component({
   selector: 'app-exchange',
@@ -9,10 +9,9 @@ import { HDNode, Transaction } from 'bitcoinjs-lib';
 export class ExchangeComponent implements OnInit {
   private testAddr;
   constructor(
-    private hdnode: HDNode
   ) {
     // this.keyPair = ECPair.makeRandom();
-    console.log(this.hdnode)
+    console.log(ECPair.makeRandom().getAddress())
   }
 
   ngOnInit() {
