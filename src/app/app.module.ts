@@ -15,6 +15,11 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { UserWalletComponent } from './user-wallet/user-wallet.component';
 import { UserOrderComponent } from './user-order/user-order.component';
 import { UserHistoryComponent } from './user-history/user-history.component';
+import { BuyListComponent } from './buy-list/buy-list.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
+import { AboutComponent } from './about/about.component';
+import { HelpComponent } from './help/help.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,12 @@ import { UserHistoryComponent } from './user-history/user-history.component';
     UserInfoComponent,
     UserWalletComponent,
     UserOrderComponent,
-    UserHistoryComponent
+    UserHistoryComponent,
+    BuyListComponent,
+    UserLoginComponent,
+    UserRegisterComponent,
+    AboutComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,

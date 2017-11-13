@@ -49,7 +49,6 @@ export class SellListComponent implements OnInit {
   }
 
   startExchange(data) {
-    console.log(data);
     this.router.navigateByUrl("/exchange");
   }
 
