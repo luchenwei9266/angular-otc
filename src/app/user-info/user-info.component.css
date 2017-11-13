@@ -1,0 +1,24 @@
+.user-info-menu {
+    width: 250px;
+    height: 1050px;
+    background-color: #404040;
+}
+
+.user-info-li {
+    font-size: 18px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.user-info-content {
+    height: 1050px;
+    width: 100%;
+    background-color: rgb(221, 223, 221);
+    padding: 0 15px;
+}
+
+.user-info-wrap {
+    display: flex;
+    flex-direction: row;
+}

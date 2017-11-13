@@ -1,0 +1,15 @@
+<div>
+    <nz-card *ngFor="let item of userWallets" class="user-wallet-card">
+        <ng-template #title class="user-wallet-h1">
+            <h2>{{ item.name }}</h2>
+        </ng-template>
+        <ng-template #body>
+            <h1>地址：{{ item.address }}</h1>
+            <br />
+            <h1>数量：{{ item.amout }}</h1>
+            <br />
+            <h1>≈ {{ item.allPrice }} </h1>
+            <br />
+        </ng-template>
+    </nz-card>
+</div>

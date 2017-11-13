@@ -11,6 +11,10 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SellListComponent } from './sell-list/sell-list.component';
 import { ExchangeComponent } from './exchange/exchange.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { UserWalletComponent } from './user-wallet/user-wallet.component';
+import { UserOrderComponent } from './user-order/user-order.component';
+import { UserHistoryComponent } from './user-history/user-history.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ExchangeComponent } from './exchange/exchange.component';
     HomeComponent,
     TopMenuComponent,
     SellListComponent,
-    ExchangeComponent
+    ExchangeComponent,
+    UserInfoComponent,
+    UserWalletComponent,
+    UserOrderComponent,
+    UserHistoryComponent
   ],
   imports: [
     BrowserModule,
