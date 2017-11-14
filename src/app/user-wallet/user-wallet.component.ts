@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import AV from '../key';
 
 @Component({
   selector: 'app-user-wallet',
