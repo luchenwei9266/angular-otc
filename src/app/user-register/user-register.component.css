@@ -1,0 +1,9 @@
+.register-from-wrap {
+    width: 100%;
+    height: 1050px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}

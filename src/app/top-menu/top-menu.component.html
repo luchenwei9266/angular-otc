@@ -1,11 +1,11 @@
 <div class="logo" (click)="goToHome()">Cryptocurrency-OTC</div>
 <ul nz-menu [nzMode]="'horizontal'" [nzTheme]="'dark'" class='head'>
-    <li nz-menu-item>购买比特币</li>
+    <li nz-menu-item routerLink="/sellList" routerLinkActive="active">购买比特币</li>
     <li nz-menu-item>出售比特币</li>
     <li nz-menu-item>用户指南</li>
     <li nz-menu-item>关于我们</li>
     <div class="head-login">
-        <li nz-menu-item>登录</li>
-        <li na-menu-item>注册</li>
+        <li nz-menu-item routerLink="/login" routerLinkActive="active">登录</li>
+        <li na-menu-item routerLink="/register" routerLinkActive="active">注册</li>
     </div>
 </ul>

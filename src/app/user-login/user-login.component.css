@@ -1,0 +1,21 @@
+   .login-from-wrap {
+       width: 100%;
+       height: 1050px;
+       display: flex;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       background-color: #fff;
+   }
+   
+   .login-form {
+       max-width: 300px;
+   }
+   
+   .login-form-forgot {
+       float: right;
+   }
+   
+   .login-form-button {
+       width: 100%;
+   }

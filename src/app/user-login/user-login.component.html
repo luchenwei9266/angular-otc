@@ -1,3 +1,31 @@
-<p>
-  user-login works!
-</p>
+<div class="login-from-wrap">
+    <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="_submitForm()">
+        <div nz-form-item>
+            <div nz-form-control [nzValidateStatus]="validateForm.controls.userName">
+                <nz-input formControlName="userName" [nzPlaceHolder]="'账户'" [nzSize]="'large'">
+                    <ng-template #prefix>
+                        <i class="anticon anticon-user"></i>
+                    </ng-template>
+                </nz-input>
+                <div nz-form-explain *ngIf="validateForm.controls.userName.dirty&&validateForm.controls.userName.hasError('required')">请输入您的用户名</div>
+            </div>
+        </div>
+        <div nz-form-item>
+            <div nz-form-control [nzValidateStatus]="validateForm.controls.password">
+                <nz-input formControlName="password" [nzType]="'password'" [nzPlaceHolder]="'密码'" [nzSize]="'large'">
+                    <ng-template #prefix>
+                        <i class="anticon anticon-lock"></i>
+                    </ng-template>
+                </nz-input>
+                <div nz-form-explain *ngIf="validateForm.controls.password.dirty&&validateForm.controls.password.hasError('required')">请输入您的密码</div>
+            </div>
+        </div>
+        <div nz-form-item>
+            <div nz-form-control>
+                <a class="login-form-forgot" class="login-form-forgot">忘记密码？</a>
+                <button nz-button class="login-form-button" [nzType]="'primary'" [nzSize]="'large'">Log in</button> Or
+                <a routerLink="/register" routerLinkActive="active">新用户注册</a>
+            </div>
+        </div>
+    </form>
+</div>
