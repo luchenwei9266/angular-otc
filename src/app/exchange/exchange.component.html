@@ -1,3 +1,19 @@
-<p>
-  exchange works!
-</p>
+<div class="exchange-wrap">
+    <div class="exchange-head">
+        <h1>您的余额：10 BTC</h1>
+        <div class="exchange-head-input">
+            <nz-input [(ngModel)]="exchangeNum" [nzPlaceHolder]="'请输入你要出售的数量'" [nzSize]="'large'"></nz-input>
+            <button nz-button [nzType]="'primary'" [nzSize]="'large'">确定出售</button>
+        </div>
+    </div>
+    <hr class="exchange-hr">
+    <div class="exchange-im-wrap">
+        <h1>聊天</h1>
+        <div class="exchange-im-talk"></div>
+        <div class="exchange-im-input">
+            <nz-input [(ngModel)]="inputText" [nzSize]="'large'" [nzPlaceHolder]="'跟买家开始沟通'"></nz-input>
+            <button nz-button [nzType]="'primary'" [nzSize]="'large'">发送</button>
+        </div>
+    </div>
+
+</div>

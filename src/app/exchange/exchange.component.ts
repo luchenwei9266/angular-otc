@@ -7,6 +7,8 @@ import  { HDNode, Transaction,ECPair,TransactionBuilder } from 'bitcoinjs-lib';
   styleUrls: ['./exchange.component.css']
 })
 export class ExchangeComponent implements OnInit {
+  public exchangeNum:number;
+  public inputText:string;
 
   constructor(
   ) {

@@ -1,0 +1,69 @@
+.exchange-wrap {
+    background-color: #fff !important;
+    height: 1060px;
+    padding: 15px 20px;
+}
+
+.exchange-head {
+    min-width: 500px;
+    max-width: 700px;
+    margin: 0 20px;
+}
+
+.exchange-head h1,
+input,
+button {
+    margin: 15px 0;
+}
+
+.exchange-head-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exchange-head button {
+    margin-left: 10px;
+    display: flex;
+    flex-grow: 2;
+}
+
+.exchange-head nz-input {
+    display: flex;
+    flex-grow: 5;
+}
+
+.exchange-hr {
+    background: #111;
+    margin: 20px;
+    padding: 0 10px;
+    height: 1px;
+}
+
+.exchange-im-talk {
+    margin: 15px;
+    height: 600px;
+    border: 1px solid #e3e4e5;
+    border-radius: 8px;
+}
+
+.exchange-im-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.exchange-im-input button {
+    margin-left: 15px;
+}
+
+.exchange-im-wrap h1 {
+    margin-left: 20px;
+}
+
+.exchange-im-input nz-input {
+    max-width: 600px;
+    min-width: 400px;
+}
