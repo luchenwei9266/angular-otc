@@ -39,6 +39,16 @@ export class SellListComponent implements OnInit {
       online: '在线中',
       introduction: '支持支付宝，微信，银行转账，交易前请联系，谢谢！'
     },
+    {
+      uid         :  4,
+      name       : '绿巨人',
+      amout       :  '1000 个以上 NEO',
+      score        : 4.9,
+      expand     : false,
+      range    : '5000~50000 CNY',
+      online: '在线中',
+      introduction: '支持支付宝，微信，银行转账，交易前请联系，谢谢！'
+    },
   ];
 
   constructor(  

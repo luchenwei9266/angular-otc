@@ -23,7 +23,7 @@
         <div nz-form-item>
             <div nz-form-control>
                 <a class="login-form-forgot" class="login-form-forgot">忘记密码？</a>
-                <button nz-button class="login-form-button" [nzType]="'primary'" [nzSize]="'large'">Log in</button> Or
+                <button nz-button class="login-form-button" [nzType]="'primary'" [nzSize]="'large'" (click)="userLogin()">Login</button> Or
                 <a routerLink="/register" routerLinkActive="active">新用户注册</a>
             </div>
         </div>

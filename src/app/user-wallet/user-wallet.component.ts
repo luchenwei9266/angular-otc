@@ -11,14 +11,18 @@ export class UserWalletComponent implements OnInit {
   
   constructor() { 
     this.userWallets = [
-      { 'name':'比特币(bitcoin)','address':'1DQe9F3agsDcr4qoTZ3Sush4e88Nv9tNxa','amout':'5 BTC','allPrice':'200,000 CNY' },
-      { 'name':'以太坊(Ethereum)','address':'0xfc0948f2f1b19cc2f78468864cc737d4d21856d9','amout':'50 ETH','allPrice':'110,000 CNY' },
-      { 'name':'小蚁(NEO)','address':'AUmrvwEs6qzy55pgqgcaSkKQgY4JeFm6jv','amout':'1000 NEO','allPrice':'180,000 CNY' }
+      { 'name':'比特币(bitcoin)','address':'1DQe9F3agsDcr4qoTZ3Sush4e88Nv9tNxa','amout':'5 BTC','allPrice':'200,000 CNY','key':"BTC" },
+      { 'name':'以太坊(Ethereum)','address':'0xfc0948f2f1b19cc2f78468864cc737d4d21856d9','amout':'50 ETH','allPrice':'110,000 CNY','key':"ETH" },
+      { 'name':'小蚁(NEO)','address':'AUmrvwEs6qzy55pgqgcaSkKQgY4JeFm6jv','amout':'1000 NEO','allPrice':'180,000 CNY','key':"NEO" }
     ]
   }
 
   ngOnInit() {
  
+  }
+
+  newAddr(key) {
+    console.log(key);
   }
 
 }

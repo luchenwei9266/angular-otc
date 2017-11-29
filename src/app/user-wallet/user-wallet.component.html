@@ -3,6 +3,11 @@
         <ng-template #title class="user-wallet-h1">
             <h2>{{ item.name }}</h2>
         </ng-template>
+
+        <ng-template #extra>
+            <button nz-button [nzType]="'primary'" (click)="newAddr(item.key)">生成地址</button>
+        </ng-template>
+
         <ng-template #body>
             <h1>地址：{{ item.address }}</h1>
             <br />
